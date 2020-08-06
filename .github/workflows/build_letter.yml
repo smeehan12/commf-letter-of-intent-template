@@ -12,15 +12,12 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
-      - name: Get Repo
+      - name: Set up Git repository
         uses: actions/checkout@v2
-        with:
-          path: main
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           root_file: letter.tex
-          working_directory: ./
 #      - name: Archive Letter
 #        uses: actions/upload-artifact@v2
 #        with:
