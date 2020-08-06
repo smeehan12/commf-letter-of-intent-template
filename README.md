@@ -14,3 +14,7 @@ the repository and use it for your own LoI or for that of your group/frontier.
 ```
 pdflatex letter.tex
 ```
+
+
+## Docker 
+https://hub.docker.com/r/schickling/latex
