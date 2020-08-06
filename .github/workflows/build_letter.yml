@@ -15,6 +15,7 @@ jobs:
       - name: Build
         run: |
           pwd
+          cat letter.tex
           pdflatex letter.tex
       - name: Archive Letter
         uses: actions/upload-artifact@v2
