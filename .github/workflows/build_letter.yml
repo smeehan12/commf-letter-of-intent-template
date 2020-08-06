@@ -14,7 +14,6 @@ jobs:
       - name: Get Repo
         uses: actions/checkout@v2
       - name: Build
-        uses: schickling/latex:latest
         run: |
           pwd
           cat letter.tex
