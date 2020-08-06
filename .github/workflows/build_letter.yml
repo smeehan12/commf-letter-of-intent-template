@@ -1,4 +1,5 @@
 # https://github.com/marketplace/actions/latex-compilation
+# https://www.reddit.com/r/LaTeX/comments/cudaqz/github_actions_to_compile_latex_documents/
 
 name: Build Letter of Intent
 # This workflow is triggered on pushes to the repository.
@@ -19,6 +20,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: letter.tex
+          working_directory: ./
 #      - name: Archive Letter
 #        uses: actions/upload-artifact@v2
 #        with:
