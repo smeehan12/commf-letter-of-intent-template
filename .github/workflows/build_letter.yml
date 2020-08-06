@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Get Repo
         uses: actions/checkout@v2
+        with:
+          path: main
       - name: Build
         run: |
           pwd
