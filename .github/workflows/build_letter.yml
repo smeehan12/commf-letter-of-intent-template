@@ -13,6 +13,7 @@ jobs:
     steps:
       # This step prints an output (time) from the previous step's action.
       - name: Build
+        uses: schickling/latex:latest
         run: |
           pwd
           cat letter.tex
