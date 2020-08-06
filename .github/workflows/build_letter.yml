@@ -18,8 +18,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: letter.tex
-#      - name: Archive Letter
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: letter-build
-#          path: letter.pdf
+      - name: Archive Letter
+        uses: actions/upload-artifact@v2
+        with:
+          name: letter-build
+          path: letter.pdf
