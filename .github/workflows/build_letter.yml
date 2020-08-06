@@ -16,12 +16,11 @@ jobs:
         with:
           path: main
       - name: Compile LaTeX document
-        uses: dante-ev/latex-action@master
+        uses: xu-cheng/latex-action@v2
         with:
-          compiler: pdflatex
           root_file: letter.tex
-      - name: Archive Letter
-        uses: actions/upload-artifact@v2
-        with:
-          name: letter-build
-          path: letter.pdf
+#      - name: Archive Letter
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: letter-build
+#          path: letter.pdf
